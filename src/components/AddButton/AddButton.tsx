@@ -10,7 +10,7 @@ export default function AddButton({ Tasks }: { Tasks: {tasks: task[], setTasks: 
 
   return (
     <>
-      <button onClick={addTask}></button>
+      <button onClick={addTask}>New Task</button>
     </>
   );
 }

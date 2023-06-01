@@ -6,14 +6,12 @@ export interface task {
 }
 
 export default function TasksList() {
-  
-
   const [tasks, setTasks] = React.useState<task[]>([{name: 'test task'}]);
-
 
   return (
     <>
       <div>
+        {tasks.map(task => <li>{task.name}</li>)}
       </div>
       <AddButton Tasks={{tasks, setTasks}}/>
     </>  
